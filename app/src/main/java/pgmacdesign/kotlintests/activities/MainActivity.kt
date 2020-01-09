@@ -8,6 +8,7 @@ import android.view.MenuItem
 
 import kotlinx.android.synthetic.main.activity_main.*
 import pgmacdesign.kotlintests.R
+import pgmacdesign.kotlintests.kotlintesting.patTest
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,8 +18,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+            patTest(2)
         }
     }
 
